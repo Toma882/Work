@@ -1,0 +1,10 @@
+#Image(Split=512)
+#Text
+#Image
+#PushOutputPath("")
+#Rect
+
+Rect;LinkPrefab("")
+
+#Image;RectToParent
+#Image;RectToParentX2
