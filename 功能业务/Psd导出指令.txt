@@ -4,7 +4,11 @@
 #PushOutputPath("")
 #Rect
 
-Rect;LinkPrefab("")
+#Rect;LinkPrefab("")
+
+#Rect;SLinkPrefab("")              带缩放
 
 #Image;RectToParent
 #Image;RectToParentX2
+
+Transform(angle =- 6.2)
