@@ -1,0 +1,31 @@
+当前项目使用店铺Sprite
+	CustomerDetailsItem
+	StoreBuildingPanel
+	StoreItem
+
+需求
+	将Sprite 尺寸变化 125 改为 512
+	部分商店需要支持动效
+	
+	
+方案1：仍然使用Sprite 
+	
+	适配
+		因为存在多格店，所以店铺需要美术统一尺寸（512*512）
+		
+	动效
+		使用Sprite的不支持动效
+		
+	创建及释放
+		由ResourceEngine管理
+		
+方案2: 使用GameObject
+	适配
+		需要计算缩放值，不需要美术统一尺寸。
+	动效
+		支持
+	
+	创建及释放
+		使用店铺#ShopIconPool来Pop和Push对象，在对应模块结束后清空对象池
+		
+	

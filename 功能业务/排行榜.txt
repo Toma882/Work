@@ -1,0 +1,41 @@
+排行榜
+	导图
+		漏导出
+		RankingListItem
+			RoleHeadIcon 
+			
+			
+
+	RankMemberComm --通用数据
+	
+	
+	LeaderBoardW2G
+		用于排序的数据
+	
+	
+	boards 排序数据的集合
+	
+	
+	--排行榜初始化请求
+		LeaderBoardInitReq
+			--> Dict[boardType] = RankMemberComm
+				Dict[boardType] = LeaderBoardW2G
+				
+	---单个排行版数据
+	LeaderBoard2CSimple
+		int boardType;
+		RankMemberComm leaderComm;
+		RankMemberSort leaderSort;
+		
+	
+	LeaderBoardBoardSimplesReq 排行榜总览请求
+		boards --> Dict[boardType]boards
+	
+	
+	LeaderBoardBoardsReq 单个排行榜全列表数据
+	
+	
+	Q：
+		1.服务器定时刷新 or 处于排行榜界面定时刷新（整点）or 打开窗口请求数据
+		
+	

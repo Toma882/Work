@@ -1,4 +1,4 @@
-#Image(Split=512)
+l
 #Text
 #Image
 #PushOutputPath("")
@@ -12,3 +12,10 @@
 #Image;RectToParentX2
 
 Transform(angle =- 6.2)
+
+
+#HotColor("outline")   -->排行榜20241010-2
+
+#Image(Split=512)
+
+

@@ -1,0 +1,70 @@
+1. 成功学只需要展示
+cerLv -->  
+	Msg
+		AchievementCerAwardReq  --领取阶级奖励
+		SyncAchievementCerLV:SyncAction   --同步等级
+		
+	UI 	
+		AchievementCerCfg.name
+		AchievementCerCfg.desc
+		AchievementCerCfg.icon
+	
+
+2. 成就证书阶级
+	Msg
+		achStage = {
+			 AchievementMission = {} -- 进行中
+			 stageId = 1
+			 lastAwardLv = 1
+		}
+		
+		AchievementStageAwardReq --领取证书阶级奖励
+			stageId --> AchievementStageCfg.id
+		
+	UI
+		AchievementStageCfg.iconList[stageId]
+		AchievementStageCfg.bgImage
+		AchievementStageCfg.name
+		AchievementStageCfg.lvIdList
+		AchievementStageCfg.iconPath
+		
+	
+3.	成就任务
+	Msg
+		AchievementAwardReq
+			stage --> AchievementStageCfg.id
+			
+		AchievementMission   OK
+		 {
+			int cfgId;
+			int64 progress;
+			MissionState state = 0;
+				enum MissionState
+						{
+							unaward = 0,
+							awared = 1,
+						}
+											
+		};
+		
+		
+		
+	UI 
+		
+		
+		
+	
+
+	1.先判断是否是中间和最后一个
+	if curId == middle  then
+		if curId == last then
+		
+	1.任务完成 进度达成算完成还是领奖完成
+
+
+	缺失
+		1.红点
+		2.功能开放
+		3.功能图标及切页图标
+		4.服务器成就阶段经验没有下发
+		5.没有接入证书升级和成功学成绩两条协议
