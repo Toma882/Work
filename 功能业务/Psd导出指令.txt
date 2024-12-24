@@ -1,0 +1,28 @@
+
+#Text
+#Image
+#PushOutputPath("")
+
+#Rect
+#Rect;LinkPrefab("")
+#Rect;SLinkPrefab("")              带缩放
+#Rect;RectToParent
+#Rect;RectToParentX2
+#Rect;SLinkPrefab("Assets/Res/UI/Common/Element/CommonBtn.prefab")
+#Rect;SLinkPrefab("Assets/Res/UI/Common/Element/PropItem.prefab")
+#Rect;LinkPrefab("Assets/Res/UI/Common/Element/LoopListView.prefab")
+
+#Image;RectToParent
+#Image;RectToParentX2
+#Image(Split=512)
+#Image;SLinkPrefab("Assets/Res/UI/Common/Element/CommonBtn.prefab")
+#Image;SLinkPrefab("Assets/Res/UI/Common/Element/PropItem.prefab")
+#FixSizeImage
+
+
+#LinkPrefab("Assets/Res/UI/Common/Panel/MaskImg.prefab")
+
+Transform(angle =- 6.2)
+#HotColor("outline")   -->排行榜20241010-2
+
+

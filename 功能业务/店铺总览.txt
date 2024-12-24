@@ -1,0 +1,16 @@
+1.PResource
+	GetRewardList --> AddItems 
+	
+	商店碎片单独展示
+	
+	新的 商店碎片 ： ResourceBase
+	
+	数据结构上
+		是一个碎片
+	功能上：
+		1. 用来判断条件（建造上限）
+		2. 展示
+		3. 作为资源投放
+	s->c
+		新ACTION不展示在获得奖励列表
+		需要更新到店铺蓝图中的数据结构 num 最大值
